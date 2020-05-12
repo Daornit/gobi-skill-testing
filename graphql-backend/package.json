@@ -1,0 +1,28 @@
+{
+  "name": "graphql-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "backup": "node backup-strategy/backup",
+    "restore": "node backup-strategy/restore"
+  },
+  "author": "Д.Бат-Оргил",
+  "license": "ISC",
+  "dependencies": {
+    "@cdxoo/mongodb-restore": "^1.0.0",
+    "apollo-server-express": "^2.11.0",
+    "dataloader": "^2.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "slugify": "^1.4.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
