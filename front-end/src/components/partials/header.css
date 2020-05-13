@@ -1,0 +1,30 @@
+nav {
+  height: 75px;
+}
+
+nav input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.header__notification{
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: small;
+  line-height: 30px;
+}
+
+.header__logo{
+  text-align: center;
+}
+
+.header__right{
+  flex-direction: row-reverse;
+}
+
+.header__horizantal-center{
+  display: flex;
+  background: #fff;
+  align-items: center;
+}
