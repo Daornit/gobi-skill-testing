@@ -1,0 +1,30 @@
+.post img{
+  width: 100%;
+}
+
+.post__title{
+  position: absolute;
+  z-index: 5;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+} 
+
+.post__title::before{
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all .5s ease-out;
+}
+
+.post__title:hover::before{
+  width: 100%;
+}
