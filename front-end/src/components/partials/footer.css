@@ -1,0 +1,79 @@
+.Container{
+    width: 100%;
+    padding-left: 10%;
+    background-color: rgba(0, 0, 0, .03);
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    cursor: pointer;
+}
+.Copyrigth{
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.Container .list{
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    
+    width: 100%;
+    padding: 10%;
+}
+.expandTitle{
+    width: 100%;
+
+}
+.contactUs{
+    text-align: center;
+}
+.mdList{
+    margin-right: 6%;
+}
+.Title{
+    width: 100%;
+}
+.icons-insta{
+    margin-right: 10px;
+    color:deeppink;
+}
+.icons-facebook{
+    margin-right: 10px;
+    color: blue;
+}
+.Collapsible__trigger{
+    font-weight: bold;
+    margin-left: 20%;
+    cursor: pointer;
+    
+
+}
+.Collapsible{
+    display: block;
+
+}
+
+.expandFooter{
+    display: none;
+}
+
+@media(min-width: 800px){
+    .expandFooter{
+        display: block;
+    }
+   .Collapsible__trigger{
+       float: left;
+       text-align: left;
+       margin-left: -10%;
+       border-width: 1px;
+       
+   } 
+   .Collapsible{
+       display: none;
+   }
+}
