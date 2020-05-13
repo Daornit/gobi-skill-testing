@@ -29,6 +29,12 @@ class Header extends Component {
           <Container className="header__main">
             <div className="header__left">
               <div className="header__search">
+                <select name="category">
+                  <option value="stt">test1</option>
+                  <option value="stt1">test2</option>
+                  <option value="stt2">test3</option>
+                  <option value="stt3">test4</option>
+                </select>
                 <ul> 
                   <li><FontAwesomeIcon icon={faSearch}/></li>
                   {this.state.open ? <li className="togglebar" onClick={this.toggle}><FontAwesomeIcon icon={faTimes}/></li>:<li className="togglebar" onClick={this.toggle}><FontAwesomeIcon icon={faBars}/></li>}
