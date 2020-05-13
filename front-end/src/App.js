@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/partials/Header';
+import Header from './components/partials/HeaderV1';
 import Footer from './components/partials/Footer';
 
 import Hero from './components/Hero';

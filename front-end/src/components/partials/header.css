@@ -4,7 +4,20 @@ nav {
 
 nav input {
   border: none;
-  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.header__search{
+  position: relative;
+  color: #c7c7c7;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+nav input:focus {
+  border: none;
+  outline: none;
+  background: white;
 }
 
 .header__notification{
@@ -23,8 +36,51 @@ nav input {
   flex-direction: row-reverse;
 }
 
+.header__right ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.header__right ul li {
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 10px;
+  
+}
+
+.header__right ul li:first-child{
+  color: #e19999;
+}
+
 .header__horizantal-center{
   display: flex;
   background: #fff;
   align-items: center;
+}
+
+.header__menu{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.header__menu ul{
+  list-style: none;
+  display: flex;
+}
+
+.header__menu ul li a{
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.header__menu ul li a.active{
+  border-bottom: 1px solid black;
 }

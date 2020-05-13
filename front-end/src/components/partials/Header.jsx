@@ -16,23 +16,55 @@ class Header extends Component {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </div>
         <Container>
-          <Navbar className="bg-light">
-            <Row style={{width: '100%'}}>
-              <Col className="header__horizantal-center" xs={3} md={3} sm={3}>
-                <Form inline>
+          <Row style={{width: '100%'}}>
+            <Col className="header__horizantal-center" xs={3} md={3} sm={3}>
+              <Form inline>
+                <div className="header__search">
                   <FontAwesomeIcon icon={faSearch}/>
-                  <input type="text"/>
-                </Form>
-              </Col>
-              <Col className="header__logo" xs={6} md={6} sm={6}>
+                </div>
+                <input type="text" placeholder="хайлт хийх"/>
+              </Form>
+            </Col>
+            <Col className="header__logo" xs={6} md={6} sm={6}>
+              <a href="/">
                 <img src="http://www.gobi.mn/imgs/icons/gobi.png" alt="logo"/>
-              </Col>
-              <Col className="header__right header__horizantal-center" xs={3} md={3} sm={3}>
-                <FontAwesomeIcon icon={faHeart}/>
-                <FontAwesomeIcon icon={faShoppingBag}/>
+              </a>
+            </Col>
+            <Col className="header__right header__horizantal-center" xs={3} md={3} sm={3}>
+              <ul>
+                <li>
+                  <FontAwesomeIcon icon={faHeart}/>
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faShoppingBag}/>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+          <Row style={{width: '100%'}}>
+              <Col className="header__menu" xs={12} md={12} sm={12}>
+                <ul>
+                  <li>
+                    <a href="#" className="active">Эмэгтэй</a>
+                  </li>
+                  <li>
+                    <a href="#">Эрэгтэй</a>
+                  </li>
+                  <li>
+                    <a href="#">Гэр ахуй</a>
+                  </li>
+                  <li>
+                    <a href="#">Аксессуар</a>
+                  </li>
+                  <li>
+                    <a href="#">Коллекци</a>
+                  </li>
+                  <li>
+                    <a href="#">Хямдрал</a>
+                  </li>
+                </ul>
               </Col>
             </Row>
-          </Navbar>
         </Container>
       </>
     );
